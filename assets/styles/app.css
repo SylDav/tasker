@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    font-family: 'Roboto';
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas:
+    "notifications notifications notifications notifications notifications"
+    "listTasks listTasks listTasks listTasks tasksForm"
+    ;
+}
+
+#notifications, #listTasks, #tasksForm {
+    background-color: rgb(150, 135, 135);
+    margin: 5px;
+    border-radius: 10px;
+
+}
+
+#notifications {
+    display: flex;
+    justify-content: center;
+    grid-area: notifications;
+    /* background-color: greenyellow; */
+}
+
+#listTasks {
+    display: flex;
+    justify-content: center;
+    grid-area: listTasks;
+    /* background-color: indigo; */
+}
+
+#tasksForm {
+    display: flex;
+    justify-content: center;
+    grid-area: tasksForm;
+    /* background-color: orangered; */
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Tableau */
+table, td {
+    border: 1px solid black;
+}
+
+td {
+    padding: 10px;
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+
+label {
+    font-size: 18px;
+}
+
+h3 {
+    text-align: center;
+}
